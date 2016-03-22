@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="made">Створено</string>
+    <string name="madeDate">18 березня 2015</string>
+    <string name="registered">Зареєстровано</string>
+    <string name="registeredDate">19 березня 2015</string>
+    <string name="resolveBefore">Вирішити до</string>
+    <string name="resolveBeforeDate">1 жовтня 2015</string>
+    <string name="responsible">Відповідальний</string>
+    <string name="responsiblePerson">Дніпропетровський МВК()</string>
+    <string name="responsibleStructure">Реконструкція</string>
+    <string name="textForButton">в роботі</string>
+    <string name="description">Реконструкція проспекту Миру (Дніпропетровськ). Буде вимощено 13 тис.кв.м. плитки та змонтовано 33 світильника з опорами. На бульварній частині проспекту встановлять лавочки. Уздовж бульвару буде проходити велодоріжка шириною 3м і довжиною 700м. По периметру бульвар захистять. Буде висаджено 500 дерев, а вздовж трамвайного полотна - декоративні чагарники. Реконструкція бульварної частини проспекту Миру виконується за рахунок міського бюджету. На ці цілі виділено 10 млн грн.</string>
+</resources>

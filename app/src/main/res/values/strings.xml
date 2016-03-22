@@ -1,0 +1,15 @@
+<resources>
+    <string name="title" translatable="false">CE-1257219</string>
+    <string name="app_name" translatable="false">CityBeautification</string>
+    <string name="responsibleStructure">Reconstruction</string>
+    <string name="textForButton">in progress</string>
+    <string name="made">Created</string>
+    <string name="registered">Registered</string>
+    <string name="resolveBefore">Resolve before</string>
+    <string name="responsible">Responsible</string>
+    <string name="madeDate">18 march 2015</string>
+    <string name="registeredDate">19 march 2015</string>
+    <string name="resolveBeforeDate">1 october 2015</string>
+    <string name="responsiblePerson">Dnipropetrovsk MBK()</string>
+    <string name="description">Reconstruction of Mira Avenue (Dnipropetrovsk). 13 thousand sq.m. of a tile will be paved and 33 lamps with support are mounted. On boulevard part of the avenue will establish shops. Along the boulevard there will pass the bicycle track 3 m wide and 700 m long. On perimeter the boulevard will be protected. 500 trees, and along a tram cloth - ornamental shrubs will be planted. Reconstruction of boulevard part of Mira Avenue is carried out at the expense of the city budget. 10 million UAH are allocated for these purposes.</string>
+</resources>

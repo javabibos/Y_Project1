@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="description">Реконструкция проспекта Мира (Днепропетровск). Будет вымощено 13 тыс. кв.м. плитки и смонтировано 33 светильника с опорами. На бульварной части проспекта установят лавочки. Вдоль бульвара будет проходить велодорожка шириной 3м и длиной 700м. По периметру бульвар оградят. Будет высажено 500 деревьев, а вдоль трамвайного полотна - декоративные кустарники. Реконструкция бульварной части проспекта Мира выполняется за счет городского бюджета. На эти цели выделено 10 млн грн.</string>
+    <string name="made">Создано</string>
+    <string name="madeDate">18 марта 2015</string>
+    <string name="registered">Зарегистрировано</string>
+    <string name="registeredDate">19 марта 2015</string>
+    <string name="resolveBefore">Решить до</string>
+    <string name="resolveBeforeDate">1 октября 2015</string>
+    <string name="responsible">Ответственный</string>
+    <string name="responsiblePerson">Днепропетровский МВК()</string>
+    <string name="responsibleStructure">Реконструкция</string>
+    <string name="textForButton">в работе</string>
+</resources>

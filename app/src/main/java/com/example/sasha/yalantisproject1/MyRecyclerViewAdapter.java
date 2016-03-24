@@ -15,10 +15,10 @@ import java.util.List;
 
 public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.MyViewHolder> {
 
-    private List<Photo> data = Collections.emptyList();
-    private LayoutInflater inflater;
+    private List<Photo> data = Collections.emptyList(); //[Comment] Wrong names
+    private LayoutInflater inflater; //[Comment] this object should be local
 
-    public MyRecyclerViewAdapter(Context context, List<Photo> data) {
+    public MyRecyclerViewAdapter(Context context, List<Photo> data) { //[Comment] Your Adapter? Use more informative name
         inflater = LayoutInflater.from(context);
         this.data = data;
     }
@@ -32,11 +32,11 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
 
     @Override
     public void onBindViewHolder(MyViewHolder myViewHolder, int i) {
-        Photo current = data.get(i);
+        Photo current = data.get(i); //[Comment] i - it's wrong argument name. Corrects is "position"
         Uri uri = Uri.parse(current.imageUrl);
         Context context = myViewHolder.aImage.getContext();
         Picasso.with(context).load(uri)
-                .resize(300, 300)
+                .resize(300, 300) //[Comment] Magic numbers
                 .into(myViewHolder.aImage);
     }
 
@@ -46,12 +46,12 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder {
-        private ImageView aImage;
+        private ImageView aImage; //[Comment] What's aImage?
 
         public MyViewHolder(View itemView) {
             super(itemView);
             aImage = (ImageView) itemView.findViewById(R.id.imageViewRicycle);
-            itemView.setOnClickListener(MainActivity.recycleOnClickListener);
+            itemView.setOnClickListener(MainActivity.recycleOnClickListener); //[Comment] Bad idea. You can set listener in constructor
         }
     }
 }

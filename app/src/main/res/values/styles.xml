@@ -54,6 +54,8 @@
         <item name="android:clickable">true</item>
     </style>
 
+    <!-- [Comment] What's "buttom"? -->
+
     <style name="DescriptionStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -64,6 +66,8 @@
         <item name="android:onClick">onClickTextView</item>
         <item name="android:clickable">true</item>
     </style>
+
+    <!-- [Comment] Don't use relativity attributes in styles -->
 
     <style name="HeaderStyle" parent="LeftColumn">
         <item name="android:layout_width">match_parent</item>

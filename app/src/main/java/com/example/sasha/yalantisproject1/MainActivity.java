@@ -9,23 +9,25 @@ import android.view.View;
 import android.widget.Toast;
 import java.util.ArrayList;
 
+//[Comment] Wrong toolbar and status bar colors.
+//[Comment] Wrong "in progress" size
 public class MainActivity extends AppCompatActivity{
 
     private RecyclerView.LayoutManager layoutManager;
-    public  static View.OnClickListener recycleOnClickListener;
-    private static RecyclerView recyclerView;
-    private static MyRecyclerViewAdapter myAdapter;
-    private ArrayList<Photo> pictureList;
+    public  static View.OnClickListener recycleOnClickListener; //[Comment] Why static? It's wrong. Visibility modifier
+    private static RecyclerView recyclerView; //[Comment] Why static? It's wrong
+    private static MyRecyclerViewAdapter myAdapter; //[Comment] Why static? It's wrong
+    private ArrayList<Photo> pictureList; //[Comment] Wrong names use google code style. Use abstractions instead of realization
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-        actionBar.setHomeButtonEnabled(true);
-        getSupportActionBar().setTitle(R.string.title);
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        android.support.v7.app.ActionBar actionBar = getSupportActionBar(); //[Comment] Please optimize import
+        actionBar.setHomeButtonEnabled(true); //[Comment] Here you can get NPE
+        getSupportActionBar().setTitle(R.string.title);//[Comment] Here you can get NPE
+        actionBar.setDisplayHomeAsUpEnabled(true);//[Comment] Here you can get NPE
 
         recycleOnClickListener = new RecycleOnClickListener();
 

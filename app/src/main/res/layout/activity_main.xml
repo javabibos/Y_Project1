@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scroller"
+        style="@style/ScrollViewStyle">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="com.example.sasha.y_project1_lastupdated.MainActivity"
+            style="@style/MainLinerLayoutStyle">
+
+            <LinearLayout style="@style/RowStyle">
+
+                <TextView style="@style/HeaderStyle"
+                    android:text="@string/responsibleStructure"
+                    android:id="@+id/performername" />
+
+                <Button style="@style/Buttom"
+                    android:text="@string/textForButton"
+                    android:id="@+id/button" />
+
+            </LinearLayout>
+
+            <View style="@style/Line" />
+
+            <LinearLayout style="@style/RowStyle">
+
+                <TextView style="@style/LeftColumn"
+                    android:text="@string/made"
+                    android:id="@+id/made"/>
+
+                <TextView style="@style/RightColumn"
+                    android:text="@string/madeDate"
+                    android:id="@+id/madeDate" />
+            </LinearLayout>
+
+            <View style="@style/Line" />
+
+            <LinearLayout style="@style/RowStyle">
+
+                <TextView style="@style/LeftColumn"
+                    android:text="@string/registered"
+                    android:id="@+id/registered" />
+
+                <TextView style="@style/RightColumn"
+                    android:text="@string/registeredDate"
+                    android:id="@+id/registeredDate" />
+            </LinearLayout>
+
+            <View style="@style/Line" />
+
+            <LinearLayout style="@style/RowStyle">
+
+                <TextView style="@style/LeftColumn"
+                    android:text="@string/resolveBefore"
+                    android:id="@+id/resolve" />
+
+                <TextView style="@style/RightColumn"
+                    android:text="@string/resolveBeforeDate"
+                    android:id="@+id/resolveDate" />
+            </LinearLayout>
+
+            <View style="@style/Line" />
+
+            <LinearLayout style="@style/RowStyle">
+
+                <TextView style="@style/LeftColumn"
+                    android:text="@string/responsible"
+                    android:id="@+id/responsible" />
+
+                <TextView style="@style/RightColumn"
+                    android:text="@string/responsiblePerson"
+                    android:id="@+id/responsiblePerson" />
+            </LinearLayout>
+
+            <View style="@style/Line" />
+
+            <TextView style="@style/DescriptionStyle"
+                android:text="@string/description"
+                android:id="@+id/description" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_recycler_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

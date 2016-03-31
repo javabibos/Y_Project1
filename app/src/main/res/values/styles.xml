@@ -1,0 +1,93 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BasicText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">@dimen/vertical_margin</item>
+        <item name="android:paddingBottom">@dimen/vertical_margin</item>
+        <item name="android:onClick">onClickTextView</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="LeftColumn" parent="BasicText">
+        <item name="android:textColor">@color/colorLines</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="RightColumn" parent="BasicText">
+        <item name="android:textColor">@color/colorMainText</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="RowStyle">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_size</item>
+        <item name="android:background">@color/colorLines</item>
+    </style>
+
+    <style name="Buttom">
+        <item name="android:textColor">@color/colorBackgroung</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/activity_margin</item>
+        <item name="android:paddingRight">@dimen/activity_margin</item>
+        <item name="android:background">@drawable/buttonshape</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:layout_marginBottom">@dimen/vertical_margin</item>
+        <item name="android:onClick">onClickButton</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="DescriptionStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textColor">@color/colorMainText</item>
+        <item name="android:layout_marginTop">@dimen/activity_margin</item>
+        <item name="android:layout_marginBottom">@dimen/activity_margin</item>
+        <item name="android:onClick">onClickTextView</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="HeaderStyle" parent="LeftColumn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/middle_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorMainText</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="ScrollViewStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:fillViewport">true</item>
+    </style>
+
+    <style name="MainLinerLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">@dimen/activity_margin</item>
+        <item name="android:background">@color/colorBackgroung</item>
+        <item name="android:orientation">vertical</item>
+
+    </style>
+
+</resources>

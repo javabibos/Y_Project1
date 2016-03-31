@@ -17,9 +17,9 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
 
     private List<Photo> data = Collections.emptyList();
     private LayoutInflater inflater;
-    private int screenWidth;        //
+    private int screenWidth;        // for getting image size
     private int activityMargin;     // for getting image size
-    private int imageRightMargin;   //
+    private int imageRightMargin;   // for getting image size
 
     public MyRecyclerViewAdapter(Context context, List<Photo> data) {
         inflater = LayoutInflater.from(context);

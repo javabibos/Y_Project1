@@ -39,7 +39,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     @Override
     public void onBindViewHolder(MyViewHolder myViewHolder, int i) {
 
-        //find image side size
+        //find image side size for Picasso
         int imageSideSize = (screenWidth - 2*activityMargin - imageRightMargin)/2;
 
         Photo current = data.get(i);
